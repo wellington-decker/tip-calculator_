@@ -1,4 +1,6 @@
 # Frontend Mentor - Tip calculator app
+view: https://wellington-decker.github.io/tip-calculator_/
+
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
 

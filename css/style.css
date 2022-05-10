@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(189, 41%, 87%);
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  text-align: center;
+  color: hsl(186, 14%, 43%);
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.5em;
+  margin-top: 20px;
+}
+
+#container {
+  width: 767px;
+  height: 60vh;
+  margin: 50px auto;
+  display: flex;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  width: 60%;
+  padding: 2rem;
+}
+
+i {
+  padding: 2em 1em;
+  position: absolute;
+  margin-left: -5px;
+  color: hsl(192, 3%, 64%);
+}
+
+.bill_input,
+.num-of-people__input {
+  margin-top: 0.3em;
+  height: 18%;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+  text-align: right;
+  outline: none;
+  padding: 1em 0.4em 1em 0;
+  background-color: hsl(189, 41%, 97%);
+  border: 1px hidden rgb(214, 211, 211);
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+}
+
+.bill_input:hover,
+.custom:hover,
+.num-of-people__input:hover {
+  outline: 1px solid hsl(184, 14%, 56%);
+}
+
+.bill_input::-webkit-outer-spin-button,
+.bill_input::-webkit-inner-spin-button,
+.num-of-people__input::-webkit-outer-spin-button,
+.num-of-people__input::-webkit-inner-spin-button,
+.custom::-webkit-outer-spin-button,
+.custom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.right {
+  margin: 2rem;
+  width: 50%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: hsl(183, 100%, 15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bill,
+.select-tip {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.85em;
+  margin-top: 1.3em;
+}
+
+.number-of-people {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.85em;
+}
+
+.no-of-people__err {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.err {
+  font-size: 0.8em;
+  color: red;
+  display: none;
+}
+
+.select-tip {
+  margin-bottom: 0.2em;
+}
+
+.tip-amount__container,
+.total-amount__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip-amount__text,
+.total-amount__text {
+  color: white;
+  font-size: 0.8em;
+}
+
+.per-person {
+  color: hsl(184, 14%, 56%);
+  font-size: 0.6em;
+}
+
+.tip-amount-result,
+.total-person {
+  color: hsl(172, 67%, 45%);
+  font-size: 2em;
+}
+
+.tip-by__percentage {
+  padding: 10px 30px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border: none;
+  margin: 0.3em 0;
+  width: 100px;
+  text-align: center;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.tip-by__percentage:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  box-shadow: 2px 2px 4px rgb(94, 91, 91);
+}
+
+.custom {
+  padding: 10px 20px;
+  background-color: hsl(189, 41%, 87%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  margin: 0.3em 0;
+  width: 100px;
+  text-align: right;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Space Mono", monospace;
+}
+
+button {
+  font-family: "Space Mono", monospace;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.reset-button {
+  margin-top: 2em;
+  background-color: hsl(183, 94%, 20%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.reset-button:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 575px) {
+  #container {
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  i {
+    padding: 2em 1em;
+  }
+
+  .right {
+    width: 85%;
+    margin: 1em auto 2em auto;
+  }
+
+  .tip-amount-result,
+  .total-person {
+    font-size: 1.7em;
+  }
+
+  .tip-by__percentage {
+    width: 48%;
+  }
+
+  .custom {
+    width: 48%;
+  }
+
+  .attribution {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 798px) {
+  #container {
+    width: 85%;
+    height: 90%;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  i {
+    padding: 2.4em 1em;
+  }
+
+  .right {
+    width: 85%;
+    margin: 1em auto 2em auto;  
+  }
+
+  .tip-amount-result,
+  .total-person {
+    font-size: 1.7em;
+  }
+
+  .tip-by__percentage {
+    width: 48%;
+  }
+
+  .custom {
+    width: 48%;
+  }
+
+  .attribution {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 799px) and (max-width: 1300px) {
+  #container {
+    width: 767px;
+    height: 70%;
+  }
+
+  i {
+    padding: 2.9em 1em;
+  }
+
+  .left {
+    width: 60%;
+    padding: 2rem;
+  }
+
+  .right {
+    margin: 2rem;
+    width: 50%;
+    min-height: 100%;
+  }
+
+  .bill,
+  .select-tip {
+    margin-top: 1em;
+  }
+
+  .bill_input,
+  .num-of-people__input {
+    width: 100%;
+    height: 14%;
+    margin-top: 1em;
+  }
+
+  .tip-by__percentage {
+    width: 100px;
+  }
+
+  .custom {
+    width: 100px;
+  }
+
+  .attribution {
+    margin-bottom: 20px;
+  }
+}

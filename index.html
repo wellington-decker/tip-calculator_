@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      re="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <h1>Spli<br />tter</h1>
+    <div id="container">
+      <div class="left">
+        <h3 class="bill">Bill</h3>
+        <i class="ph-currency-dollar"></i>
+        <input type="number" class="bill_input" placeholder="0" />
+        <h3 class="select-tip">Select Tip %</h3>
+        <button type="button" class="tip-by__percentage five">5%</button>
+        <button type="button" class="tip-by__percentage ten">10%</button>
+        <button type="button" class="tip-by__percentage fifteen">15%</button>
+        <button type="button" class="tip-by__percentage twenty-f">25%</button>
+        <button type="button" class="tip-by__percentage fifty">50%</button>
+        <input type="number" class="custom" placeholder="Custom" />
+
+        <div class="no-of-people__err">
+          <h3 class="number-of-people">Number of People</h3>
+          <h3 class="err">Can't be zero</h3>
+        </div>
+        <i class="ph-user-fill"></i>
+        <input type="number" class="num-of-people__input" placeholder="0" />
+      </div>
+      <div class="right">
+        <div class="tip-amount__container">
+          <div class="tip-amount__cover">
+            <h3 class="tip-amount__text">Tip Amount</h3>
+            <h3 class="per-person">/ person</h3>
+          </div>
+          <h2 class="tip-amount-result">$0.00</h2>
+        </div>
+
+        <div class="total-amount__container">
+          <div class="total-amount__cover">
+            <h3 class="total-amount__text">Total</h3>
+            <h3 class="per-person">/ person</h3>
+          </div>
+          <h2 class="total-person">$0.00</h2>
+        </div>
+
+        <button
+          type="button"
+          class="reset-button"
+          onClick="window.location.reload();"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/wellington-decker">Wellington</a>.
+    </div>
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
